@@ -1,0 +1,63 @@
+{
+  "name": "node-module-template",
+  "version": "0.0.0",
+  "description": "$DESCRIPTION",
+  "license": "ISC",
+  "author": "Emily Marigold Klassen <forivall@gmail.com>",
+  "homepage": "https://github.com/forivall/$NAME",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:forivall/$NAME.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forivall/$NAME/issues"
+  },
+  "scripts": {
+    "lint": "xo",
+    "lint-staged": "lint-staged",
+    "inspect": "jsinspect",
+    "test": "ava",
+    "posttest": "npm run lint && npm run inspect",
+    "test-cov": "nyc ava",
+    "posttest-cov": "npm run posttest",
+    "test-ci": "npm run test-cov",
+    "posttest-ci": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "keywords": [],
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "dependencies": {},
+  "bundledDependencies": [],
+  "peerDependencies": {},
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "coveralls": "^2.11.14",
+    "eslint-config-mxo": "^0.5.3",
+    "jsinspect": "^0.12.6",
+    "nyc": "^11.0.3",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": [
+      "mxo"
+    ],
+    "ignores": [,
+      "**/fixtures/**"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "test/**",
+          "test.js",
+          "test-*.js",
+          "**/__tests__/**",
+          "**/*.test.js"
+        ],
+        "extends": [
+          "mxo/ava"
+        ]
+      }
+    ]
+  }
+}

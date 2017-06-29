@@ -1,0 +1,3 @@
+* text=auto
+*.md whitespace=-trailing-space
+*.jade whitespace=-trailing-space
