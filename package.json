@@ -42,9 +42,24 @@
     "extends": [
       "mxo"
     ],
-    "ignores": [,
+    "ignores": [
       "**/fixtures/**"
     ],
+    "rules": {
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "test/**",
+            "test.js",
+            "test-*.js",
+            "**/__tests__/**",
+            "**/*.test.js",
+            "scripts/**"
+          ]
+        }
+      ]
+    },
     "overrides": [
       {
         "files": [
