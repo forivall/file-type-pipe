@@ -1,16 +1,16 @@
 {
-  "name": "node-module-template",
+  "name": "file-type-pipe",
   "version": "0.0.0",
-  "description": "$DESCRIPTION",
+  "description": "Use file-type to automatically set the Content-Type header on a ServerResponse",
   "license": "ISC",
   "author": "Emily Marigold Klassen <forivall@gmail.com>",
-  "homepage": "https://github.com/forivall/$NAME",
+  "homepage": "https://github.com/forivall/file-type-pipe",
   "repository": {
     "type": "git",
-    "url": "git@github.com:forivall/$NAME.git"
+    "url": "git@github.com:forivall/file-type-pipe.git"
   },
   "bugs": {
-    "url": "https://github.com/forivall/$NAME/issues"
+    "url": "https://github.com/forivall/file-type-pipe/issues"
   },
   "scripts": {
     "lint": "xo",
