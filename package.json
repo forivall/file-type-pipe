@@ -23,11 +23,17 @@
     "test-ci": "npm run test-cov",
     "posttest-ci": "nyc report --reporter=text-lcov | coveralls"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [],
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bl": "^1.2.1",
+    "file-type": "^5.2.0"
+  },
   "bundledDependencies": [],
   "peerDependencies": {},
   "devDependencies": {
@@ -39,6 +45,7 @@
     "xo": "^0.18.0"
   },
   "xo": {
+    "semicolon": false,
     "extends": [
       "mxo"
     ],
