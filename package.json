@@ -32,14 +32,14 @@
   },
   "dependencies": {
     "bl": "^1.2.1",
-    "file-type": "^5.2.0"
+    "file-type": "^7.1.0"
   },
   "bundledDependencies": [],
   "peerDependencies": {},
   "devDependencies": {
     "@types/node": "^8.0.40",
-    "ava": "^0.20.0",
-    "coveralls": "^2.11.14",
+    "ava": "^0.22.0",
+    "coveralls": "^3.0.0",
     "eslint-config-mxo": "^0.5.3",
     "jsinspect": "^0.12.6",
     "nyc": "^11.0.3",

@@ -70,9 +70,9 @@ class FileTypePipe extends Transform {
     this.push(buf)
   }
 }
-module.exports = FileTypePipe;
-module.exports.default = FileTypePipe;
-module.exports.FileTypePipe = FileTypePipe;
+module.exports = FileTypePipe
+module.exports.default = FileTypePipe
+module.exports.FileTypePipe = FileTypePipe
 
 Object.defineProperty(module.exports, 'DEFAULT_DETECT_SIZE', {
   value: defaultDetectSize,
