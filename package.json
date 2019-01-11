@@ -24,7 +24,8 @@
     "posttest-ci": "nyc report --reporter=text-lcov | coveralls"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "keywords": [],
   "publishConfig": {
