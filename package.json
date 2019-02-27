@@ -1,6 +1,6 @@
 {
   "name": "file-type-pipe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Use file-type to automatically set the Content-Type header on a ServerResponse",
   "license": "ISC",
   "author": "Emily Marigold Klassen <forivall@gmail.com>",
