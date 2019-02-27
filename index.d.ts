@@ -17,8 +17,8 @@ export declare class FileTypePipe extends Transform {
   _transform(chunk: string | Buffer, encoding: string, callback: Function): any
   _flush(callback: Function): any
   pipe<T extends NodeJS.WritableStream>(destination: T, options?: FileTypePipePipeOptions): T
-  protected _detectFileType()
+  protected _detectFileType(): void
 }
 
-export declare const DEFAULT_DETECT_SIZE
-export declare function configure(options?: {detectSize?: number})
+export declare const DEFAULT_DETECT_SIZE: number
+export declare function configure(options?: {detectSize?: number}): void
