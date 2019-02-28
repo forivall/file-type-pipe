@@ -6,7 +6,7 @@ import test from 'ava'
 
 import BufferList from 'bl'
 
-import FileTypePipe from './index'
+import FileTypePipe from '.'
 
 const Promise = global.Promise
 
@@ -98,7 +98,7 @@ test('headersSent', async (t) => {
 
   ftp.pipe(res)
 
-  await t.throws(p, /cannot pipe after .* headers .* sent/)
+  await t.throwsAsync(p, /cannot pipe after .* headers .* sent/)
 })
 
 test('alreadyDetected', async (t) => {
@@ -113,7 +113,7 @@ test('alreadyDetected', async (t) => {
   const p = finished(ftp)
   ftp.pipe(createBitbucket())
 
-  await t.throws(p, /cannot pipe after .* detected/)
+  await t.throwsAsync(p, /cannot pipe after .* detected/)
 })
 test('ignore headersSent', async (t) => {
   const ftp = fs.createReadStream(path.join(__dirname, './fixture/fixture.ps'))

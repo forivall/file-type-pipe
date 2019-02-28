@@ -15,6 +15,7 @@ class FileTypePipe extends Transform {
     this._detectSize = options.detectSize == null ? defaultDetectSize : options.detectSize
     this._fallbackContentType = options.fallback
   }
+
   _transform(chunk, encoding, callback) {
     const bl = this._bl
     if (bl == null) return (callback(null, chunk, encoding), undefined)
@@ -25,6 +26,7 @@ class FileTypePipe extends Transform {
     }
     callback()
   }
+
   _flush(callback) {
     const bl = this._bl
     if (bl == null) return (callback(), undefined)
@@ -33,6 +35,7 @@ class FileTypePipe extends Transform {
 
     callback()
   }
+
   pipe(dest, options) {
     if (this._bl == null) {
       this.emit('error', new Error('You cannot pipe after the file type has been detected.'))
@@ -43,6 +46,7 @@ class FileTypePipe extends Transform {
     }
     return super.pipe(dest, options)
   }
+
   _detectFileType() {
     const bl = this._bl
 
