@@ -32,19 +32,19 @@
     "registry": "http://registry.npmjs.org"
   },
   "dependencies": {
-    "bl": "^1.2.1",
-    "file-type": "^7.1.0"
+    "bl": "^2.2.0",
+    "file-type": "^10.8.0"
   },
   "bundledDependencies": [],
   "peerDependencies": {},
   "devDependencies": {
-    "@types/node": "^8.0.40",
-    "ava": "^0.22.0",
+    "@types/node": "^11.9.5",
+    "ava": "^1.2.1",
     "coveralls": "^3.0.0",
-    "eslint-config-mxo": "^0.5.3",
+    "eslint-config-mxo": "^0.7.0",
     "jsinspect": "^0.12.6",
-    "nyc": "^11.0.3",
-    "xo": "^0.18.0"
+    "nyc": "^13.3.0",
+    "xo": "^0.24.0"
   },
   "xo": {
     "semicolon": false,
