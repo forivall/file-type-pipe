@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "bl": "^2.2.0",
-    "file-type": "^10.8.0"
+    "file-type": "^10.11.0"
   },
   "bundledDependencies": [],
   "peerDependencies": {},
