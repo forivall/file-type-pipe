@@ -32,7 +32,7 @@
     "registry": "http://registry.npmjs.org"
   },
   "dependencies": {
-    "bl": "^2.2.0",
+    "bl": "^2.2.1",
     "file-type": "^10.8.0"
   },
   "bundledDependencies": [],
