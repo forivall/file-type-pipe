@@ -38,7 +38,7 @@
   "bundledDependencies": [],
   "peerDependencies": {},
   "devDependencies": {
-    "@types/node": "^11.9.5",
+    "@types/node": "^11.15.54",
     "ava": "^1.2.1",
     "coveralls": "^3.0.0",
     "eslint-config-mxo": "^0.7.0",
