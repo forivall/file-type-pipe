@@ -1,4 +1,4 @@
-
+'use strict'
 const Transform = require('stream').Transform
 const BufferList = require('bl')
 const fileType = require('file-type')
